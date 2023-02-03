@@ -1,13 +1,13 @@
 # react_in_chrome_extension
-###A bootstrapping example of a Chrome extension using React  
-####To install the project:
+### A bootstrapping example of a Chrome extension using React  
+#### To install the project:
  * clone this repository into a local 'dev' directory
  * open chrome and type chrome://extensions/ in the address bar
  * activate 'developer mode' (right corner on top)
  * click 'Load Unpacked' (left corner)
  * pin the extension
 
-####to test:
+#### to test:
  * click on the extension, a popup will show up with a button in it, and the current tab url
  * click on the button to see the communication happening between react and the content script (/src/chrome/content.js)
 
