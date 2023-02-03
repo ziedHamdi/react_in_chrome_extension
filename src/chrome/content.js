@@ -1,5 +1,9 @@
 //this tells webpack to ignore the chrome variable
 /*global chrome*/
+
+/**
+ * Sometimes the button doesn't react, seems to be when the devtools is opened from the popup as described here: https://stackoverflow.com/questions/54619817/how-to-fix-unchecked-runtime-lasterror-could-not-establish-connection-receivi
+ */
 import {Sender} from "../types";
 
 function isAppMessage(message, sender) {
