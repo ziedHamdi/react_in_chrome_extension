@@ -1,0 +1,26 @@
+{
+  "name": "Lean Growth",
+  "description": "Grow LinkedIn reach as an organized group",
+  "author": "Zied Hamdi",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Grow LinkedIn reach as an organized group"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["./static/js/content.js"],
+      "all_frames": false,
+      "run_at": "document_end"
+    }
+  ]
+
+}
